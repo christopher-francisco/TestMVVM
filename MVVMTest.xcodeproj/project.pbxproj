@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		A24358DC27B940230081B266 /* MVVMTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358DB27B940230081B266 /* MVVMTestApp.swift */; };
-		A24358DE27B940230081B266 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358DD27B940230081B266 /* ContentView.swift */; };
+		A24358DE27B940230081B266 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358DD27B940230081B266 /* MainView.swift */; };
 		A24358E027B940240081B266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24358DF27B940240081B266 /* Assets.xcassets */; };
 		A24358E327B940240081B266 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24358E227B940240081B266 /* Preview Assets.xcassets */; };
+		A24358EA27B940450081B266 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358E927B940450081B266 /* Timer.swift */; };
+		A24358EC27B940820081B266 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358EB27B940820081B266 /* MainViewModel.swift */; };
+		A24358EF27B940F00081B266 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358EE27B940F00081B266 /* Services.swift */; };
+		A24358F127B941840081B266 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358F027B941840081B266 /* Factory.swift */; };
+		A24358F327B944F10081B266 /* NotYetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358F227B944F10081B266 /* NotYetStartedView.swift */; };
+		A24358F727B945270081B266 /* StartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358F627B945270081B266 /* StartedView.swift */; };
+		A24358F927B9454F0081B266 /* NotYetStartedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358F827B9454F0081B266 /* NotYetStartedViewModel.swift */; };
+		A24358FB27B945C90081B266 /* StartedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24358FA27B945C90081B266 /* StartedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A24358D827B940230081B266 /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24358DB27B940230081B266 /* MVVMTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTestApp.swift; sourceTree = "<group>"; };
-		A24358DD27B940230081B266 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A24358DD27B940230081B266 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A24358DF27B940240081B266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A24358E227B940240081B266 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A24358E927B940450081B266 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		A24358EB27B940820081B266 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		A24358EE27B940F00081B266 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		A24358F027B941840081B266 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		A24358F227B944F10081B266 /* NotYetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotYetStartedView.swift; sourceTree = "<group>"; };
+		A24358F627B945270081B266 /* StartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedView.swift; sourceTree = "<group>"; };
+		A24358F827B9454F0081B266 /* NotYetStartedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotYetStartedViewModel.swift; sourceTree = "<group>"; };
+		A24358FA27B945C90081B266 /* StartedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +67,14 @@
 		A24358DA27B940230081B266 /* MVVMTest */ = {
 			isa = PBXGroup;
 			children = (
-				A24358DB27B940230081B266 /* MVVMTestApp.swift */,
-				A24358DD27B940230081B266 /* ContentView.swift */,
 				A24358DF27B940240081B266 /* Assets.xcassets */,
 				A24358E127B940240081B266 /* Preview Content */,
+				A24358F527B944FF0081B266 /* ViewModels */,
+				A24358F427B944F90081B266 /* Views */,
+				A24358DB27B940230081B266 /* MVVMTestApp.swift */,
+				A24358E927B940450081B266 /* Timer.swift */,
+				A24358EE27B940F00081B266 /* Services.swift */,
+				A24358F027B941840081B266 /* Factory.swift */,
 			);
 			path = MVVMTest;
 			sourceTree = "<group>";
@@ -65,6 +85,26 @@
 				A24358E227B940240081B266 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A24358F427B944F90081B266 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A24358DD27B940230081B266 /* MainView.swift */,
+				A24358F227B944F10081B266 /* NotYetStartedView.swift */,
+				A24358F627B945270081B266 /* StartedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A24358F527B944FF0081B266 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A24358EB27B940820081B266 /* MainViewModel.swift */,
+				A24358F827B9454F0081B266 /* NotYetStartedViewModel.swift */,
+				A24358FA27B945C90081B266 /* StartedViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A24358DE27B940230081B266 /* ContentView.swift in Sources */,
+				A24358FB27B945C90081B266 /* StartedViewModel.swift in Sources */,
+				A24358F327B944F10081B266 /* NotYetStartedView.swift in Sources */,
+				A24358EF27B940F00081B266 /* Services.swift in Sources */,
+				A24358EA27B940450081B266 /* Timer.swift in Sources */,
+				A24358F127B941840081B266 /* Factory.swift in Sources */,
+				A24358DE27B940230081B266 /* MainView.swift in Sources */,
 				A24358DC27B940230081B266 /* MVVMTestApp.swift in Sources */,
+				A24358F927B9454F0081B266 /* NotYetStartedViewModel.swift in Sources */,
+				A24358F727B945270081B266 /* StartedView.swift in Sources */,
+				A24358EC27B940820081B266 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

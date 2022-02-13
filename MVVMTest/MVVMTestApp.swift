@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct MVVMTestApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  let factory = Factory (
+    store: Store(),
+    nManager: NotificationManager(),
+    wManager: WatchConnectionManager()
+  )
+  
+  var body: some Scene {
+    WindowGroup {
+      MainView(viewModel: factory.makeMainViewModel())
     }
+  }
 }
